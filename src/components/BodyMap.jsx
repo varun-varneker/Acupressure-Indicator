@@ -20,7 +20,9 @@ export default function BodyMap({ side, points, activePoint, onPointSelect, onBa
         const doc = parser.parseFromString(text, "image/svg+xml");
         const svgEl = doc.querySelector('svg');
         if (svgEl) {
-          const vb = svgEl.getAttribute('viewBox') || '0 0 1127 2286';
+          const width = svgEl.getAttribute('width') || '1127';
+          const height = svgEl.getAttribute('height') || '2286';
+          const vb = svgEl.getAttribute('viewBox') || `0 0 ${width} ${height}`;
           setViewBox(vb);
           setSvgContent(svgEl.innerHTML);
         }
@@ -62,10 +64,10 @@ export default function BodyMap({ side, points, activePoint, onPointSelect, onBa
 
     const [origX, origY, origW, origH] = viewBox.split(/[\s,]+/).map(Number);
     const coords = activePoint.coordinates; 
-    // Note: in points.js coordinates are already x/y percentages.
     
-    const targetX = (coords.x / 100) * origW;
-    const targetY = (coords.y / 100) * origH;
+    // Normalize absolute coordinates to the current viewBox
+    const targetX = (coords.x / coords.svgWidth) * origW;
+    const targetY = (coords.y / coords.svgHeight) * origH;
     
     const scale = 3.5;
     const translateX = (origW / 2) - targetX * scale;
@@ -118,8 +120,8 @@ export default function BodyMap({ side, points, activePoint, onPointSelect, onBa
             {/* Acupoints layer */}
             <g id="acupoints-layer">
               {points.map(p => {
-                const cx = (p.coordinates.x / 100) * origW;
-                const cy = (p.coordinates.y / 100) * origH;
+                const cx = (p.coordinates.x / p.coordinates.svgWidth) * origW;
+                const cy = (p.coordinates.y / p.coordinates.svgHeight) * origH;
                 const color = getElementColor(p.element);
                 const isActive = activePoint?.id === p.id;
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { points } from './data/points';
+import { acupuncturePoints as points } from './data/points';
 import BodyMap from './components/BodyMap';
 import Sidebar from './components/Sidebar';
 import SearchBar from './components/SearchBar';
@@ -8,19 +8,6 @@ export default function App() {
   const [currentSide, setCurrentSide] = useState('front');
   const [activePoint, setActivePoint] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
-
-  // Service Worker registration
-  useEffect(() => {
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(registration => {
-          console.log('SW registered: ', registration);
-        }).catch(err => {
-          console.log('SW registration failed: ', err);
-        });
-      });
-    }
-  }, []);
 
   const filteredPoints = useMemo(() => {
     if (!searchQuery) return points;
@@ -41,22 +28,11 @@ export default function App() {
 
   const sidePoints = useMemo(() => {
     return filteredPoints.filter(p => {
-      const ps = p.bodyArea === 'Both' || p.bodyArea === 'both' ? 'both' : (p.bodyArea === 'Back' || p.bodyArea === 'back' ? 'back' : 'front');
-      // Simple mapping back to 'front'/'back'
-      // Note: Data says "Torso", "Leg", etc. but previously we used a helper getPointSide.
-      // I'll replicate the logic more robustly.
-      const actualSide = getPointSide(p);
-      return actualSide === 'both' || actualSide === currentSide;
+      const source = p.coordinates.svgSource;
+      const targetSource = `body-map-${currentSide}.svg`;
+      return source === targetSource;
     });
   }, [filteredPoints, currentSide]);
-
-  function getPointSide(p) {
-    const backPoints = ["GV20", "GV14", "BL23", "BL40", "BL60", "SI3", "TE5"];
-    if (backPoints.includes(p.id)) return 'back';
-    const bothPoints = ["LI4", "PC6", "ST36", "SP6", "LV3", "KD3", "GB34", "LU7", "KD1"];
-    if (bothPoints.includes(p.id)) return 'both';
-    return 'front';
-  }
 
   const handlePointSelect = (point) => {
     setActivePoint(point);
@@ -66,8 +42,7 @@ export default function App() {
     if (currentSide === side) return;
     setCurrentSide(side);
     if (activePoint) {
-      const ps = getPointSide(activePoint);
-      if (ps !== side && ps !== 'both') {
+      if (activePoint.coordinates.svgSource !== `body-map-${side}.svg`) {
         setActivePoint(null);
       }
     }
@@ -114,11 +89,9 @@ export default function App() {
         <Sidebar point={activePoint} onRelatedClick={(id) => {
           const target = points.find(p => p.id === id);
           if (target) {
-            const side = getPointSide(target);
-            if (side !== 'both' && side !== currentSide) {
+            const side = target.coordinates.svgSource.includes('back') ? 'back' : 'front';
+            if (side !== currentSide) {
               handleSwitchSide(side);
-              // Small delay to allow SVG to load?
-              // In React, we can just set state.
               setActivePoint(target);
             } else {
               setActivePoint(target);

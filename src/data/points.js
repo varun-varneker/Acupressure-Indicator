@@ -1,4 +1,4 @@
-export const points = [
+const acupuncturePoints = [
     {
         "id": "CV12",
         "name": "Middle Cavity",
@@ -62,8 +62,11 @@ export const points = [
             "frequency": "1–2 times daily"
         },
         "coordinates": {
-            "x": 50,
-            "y": 35
+            "x": 564,
+            "y": 830,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "ST36",
@@ -95,62 +98,70 @@ export const points = [
             "Sea of Qi point"
         ],
         "traditionalFunctions": [
-            "Tonifies Original Qi",
-            "Warms and nourishes the Lower Jiao",
-            "Regulates Qi"
+            "Tonifies Qi and Kidney",
+            "Regulates Qi",
+            "Strengthens Original Qi",
+            "Warms the menses"
         ],
         "bodyArea": "Torso",
         "bodyRegion": "Lower Abdomen",
-        "anatomicalLocation": "On the midline, 1.5 cun below the navel",
+        "anatomicalLocation": "On the midline of the lower abdomen, 1.5 cun inferior to the umbilicus",
         "symptoms": [
             "Fatigue",
             "Weakness",
+            "Lower back pain",
             "Irregular menstruation",
-            "Lower abdominal pain"
+            "Enuresis",
+            "Digestive issues"
         ],
         "indications": [
             "Qi deficiency",
-            "Reproductive disorders",
-            "Urinary issues",
-            "Chronic fatigue"
+            "Exhaustion",
+            "Infertility",
+            "Gastrointestinal disorders",
+            "General tonification"
         ],
         "modernUses": [
-            "Immune support",
-            "Hormonal balance",
-            "Energy enhancement",
-            "Chronic illness recovery"
+            "Chronic fatigue syndrome",
+            "Low energy",
+            "Menstrual cramps",
+            "Stress recovery"
         ],
         "benefits": [
-            "Boosts vitality",
-            "Supports reproductive health",
-            "Strengthens core energy"
+            "Boosts overall energy",
+            "Warms lower body",
+            "Strengthens immunity",
+            "Enhances vitality"
         ],
         "contraindications": [
-            "Pregnancy"
+            "Severe hypertension (use lightly)",
+            "Pregnancy (use with care)",
+            "Acute full heat"
         ],
         "precautions": [
-            "Use gentle pressure only",
-            "Avoid cold compresses near this point"
+            "Apply gentle pressure for chronic deficiency; avoid heavy stimulation during pregnancy"
         ],
         "pressureTechnique": {
-            "method": "Warm palm press or light fingertip pressure",
-            "duration": "2–5 minutes",
-            "intensity": "Light to moderate",
+            "method": "Gentle kneading with warm palm or fingertips",
+            "duration": "3–5 minutes",
+            "intensity": "Moderate",
             "frequency": "Daily"
         },
         "coordinates": {
-            "x": 50,
-            "y": 45
+            "x": 564,
+            "y": 1100,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "CV4",
             "ST36",
-            "KD3"
+            "GV4"
         ],
         "associatedOrgans": [
             "Kidneys",
-            "Uterus",
-            "Bladder"
+            "Large Intestine"
         ],
         "difficultyLevel": "Beginner",
         "video": "",
@@ -170,45 +181,50 @@ export const points = [
         "yinYang": "Yang",
         "category": [
             "He-Sea point",
-            "Earth point of Stomach meridian",
-            "Command point for abdomen"
+            "Command point of the Abdomen",
+            "Point of Sea of Water and Grain"
         ],
         "traditionalFunctions": [
             "Tonifies Qi and Blood",
-            "Strengthens Spleen and Stomach",
-            "Supports Wei Qi",
-            "Calms the mind"
+            "Harmonizes the Stomach",
+            "Strengthens the Spleen",
+            "Expels Wind and Damp",
+            "Brightens the eyes"
         ],
         "bodyArea": "Leg",
         "bodyRegion": "Lower Leg",
-        "anatomicalLocation": "3 cun below the knee, one finger-breadth lateral to the tibia",
+        "anatomicalLocation": "3 cun inferior to ST35, one finger-breadth lateral to the anterior crest of the tibia",
         "symptoms": [
             "Fatigue",
-            "Digestive disorders",
-            "Knee pain",
-            "Immune weakness",
-            "Nausea"
+            "Weakness",
+            "Stomach ache",
+            "Bloating",
+            "Nausea",
+            "Dizziness",
+            "Leg pain"
         ],
         "indications": [
-            "General tonic point",
-            "Digestive complaints",
+            "All digestive systems",
+            "General weakness",
             "Immune deficiency",
-            "Musculoskeletal issues"
+            "Lower limb paralysis",
+            "Asthma and cough"
         ],
         "modernUses": [
-            "Immune enhancement",
+            "Immune system boosting",
+            "Athletic performance recovery",
             "Post-surgery recovery",
-            "Chemotherapy support",
-            "Sports endurance"
+            "Chemotherapy side-effect management"
         ],
         "benefits": [
-            "Increases energy",
-            "Strengthens immunity",
-            "Improves digestion",
-            "Reduces fatigue"
+            "Provides legendary endurance",
+            "Master point for digestion",
+            "Boosts immunity",
+            "Strengthens lower limbs"
         ],
         "contraindications": [
-            "Skin lesions at site"
+            "Children under 7 (traditional precaution)",
+            "Acute local inflammation"
         ],
         "precautions": [
             "Avoid vigorous pressure in elderly or very deficient patients"
@@ -220,8 +236,11 @@ export const points = [
             "frequency": "Daily"
         },
         "coordinates": {
-            "x": 38,
-            "y": 72
+            "x": 440,
+            "y": 1750,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "SP6",
@@ -249,63 +268,69 @@ export const points = [
         "element": "Earth",
         "yinYang": "Yin",
         "category": [
-            "Intersection point of Spleen, Liver, and Kidney meridians"
+            "Meeting point of Spleen, Liver, and Kidney meridians"
         ],
         "traditionalFunctions": [
-            "Nourishes Yin",
-            "Strengthens Spleen",
-            "Regulates menstruation",
-            "Calms the mind"
+            "Tonifies Spleen and Stomach",
+            "Resolves Dampness",
+            "Harmonizes Liver and Tonifies Kidney",
+            "Regulates menstruation and induces labor"
         ],
         "bodyArea": "Leg",
         "bodyRegion": "Lower Leg",
-        "anatomicalLocation": "3 cun above the medial malleolus, posterior to the tibia",
+        "anatomicalLocation": "3 cun superior to the tip of the medial malleolus, on the posterior border of the medial aspect of the tibia",
         "symptoms": [
-            "Menstrual irregularities",
+            "Abdominal distention",
+            "Loose stools",
+            "Irregular menstruation",
             "Insomnia",
-            "Digestive weakness",
-            "Skin disorders",
-            "Anxiety"
+            "Anxiety",
+            "Genital pain",
+            "Edema"
         ],
         "indications": [
-            "Gynecological disorders",
-            "Urinary issues",
-            "Sleep disorders",
-            "Digestive problems"
+            "Digestive disorders",
+            "Gynecological conditions",
+            "Urinary dysfunction",
+            "Emotional imbalance",
+            "Skin diseases"
         ],
         "modernUses": [
-            "PMS",
-            "Menopausal symptoms",
-            "Insomnia treatment",
-            "Stress relief"
+            "PMS relief",
+            "Menopause support",
+            "Infertility",
+            "Sleep improvement",
+            "Pelvic pain management"
         ],
         "benefits": [
-            "Regulates hormones",
-            "Improves sleep",
-            "Supports digestion",
-            "Balances emotions"
+            "Supreme point for women's health",
+            "Calms the mind",
+            "Nourishes the blood",
+            "Clears dampness"
         ],
         "contraindications": [
             "Pregnancy (may induce labor)"
         ],
         "precautions": [
-            "Strictly avoid during pregnancy",
-            "Use light pressure in weak patients"
+            "Strictly avoid during pregnancy unless inducing labor"
         ],
         "pressureTechnique": {
-            "method": "Firm fingertip pressure",
-            "duration": "1–2 minutes per side",
+            "method": "Firm circular thumb pressure",
+            "duration": "1–3 minutes per side",
             "intensity": "Moderate",
             "frequency": "Once or twice daily"
         },
         "coordinates": {
-            "x": 35,
-            "y": 78
+            "x": 410,
+            "y": 1920,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
-            "LV3",
+            "CV4",
             "KD3",
-            "CV4"
+            "LV3"
         ],
         "associatedOrgans": [
             "Spleen",
@@ -330,46 +355,50 @@ export const points = [
         "yinYang": "Yin",
         "category": [
             "Front Mu point of Lung",
-            "Alarm point"
+            "Intersection point of Lung and Spleen meridians"
         ],
         "traditionalFunctions": [
-            "Regulates and descends Lung Qi",
-            "Clears Lung Heat",
-            "Alleviates cough and wheezing"
+            "Disseminates and descends Lung Qi",
+            "Alleviates cough and wheezing",
+            "Transforms phlegm",
+            "Clears heat from the chest"
         ],
         "bodyArea": "Chest",
-        "bodyRegion": "Upper Chest",
-        "anatomicalLocation": "On the lateral chest, 6 cun lateral to the midline, in the 1st intercostal space",
+        "bodyRegion": "Upper Lateral Chest",
+        "anatomicalLocation": "Latero-superior to the sternum, 1 cun below LU2, in the infraclavicular fossa",
         "symptoms": [
             "Cough",
             "Asthma",
-            "Chest tightness",
+            "Chest pain",
             "Shortness of breath",
-            "Shoulder pain"
+            "Shoulder pain",
+            "Phlegm"
         ],
         "indications": [
             "Respiratory disorders",
-            "Grief and sadness",
-            "Shoulder tension",
-            "Skin conditions"
+            "Bronchitis",
+            "Grief (Lung emotion)",
+            "Postural chest tightness"
         ],
         "modernUses": [
-            "Asthma management",
-            "Anxiety breathing exercises",
-            "Shoulder rehabilitation"
+            "Asthma relief",
+            "Shoulder tension",
+            "Emotional release for grief",
+            "Breathing enhancement"
         ],
         "benefits": [
             "Opens the chest",
-            "Eases breathing",
-            "Releases emotional tension",
-            "Clears congestion"
+            "Deepens breathing",
+            "Clears lung congestion",
+            "Eases upper body tension"
         ],
         "contraindications": [
-            "Do not needle deeply toward lung",
-            "Avoid vigorous pressure on inflamed tissue"
+            "Pneumothorax risk — avoid deep needling",
+            "Local injury"
         ],
         "precautions": [
-            "Apply pressure at an angle away from the lung cavity"
+            "Do not needle deeply toward lung",
+            "Avoid vigorous pressure on inflamed tissue"
         ],
         "pressureTechnique": {
             "method": "Gentle circular fingertip pressure",
@@ -378,23 +407,26 @@ export const points = [
             "frequency": "Daily or as needed"
         },
         "coordinates": {
-            "x": 25,
-            "y": 22
+            "x": 320,
+            "y": 500,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "LU7",
-            "LI4",
+            "BL13",
             "CV17"
         ],
         "associatedOrgans": [
             "Lungs",
-            "Large Intestine"
+            "Spleen"
         ],
         "difficultyLevel": "Intermediate",
         "video": "",
         "references": [
             "A Manual of Acupuncture – Deadman et al.",
-            "Acupuncture: A Comprehensive Text – Shanghai College"
+            "Between Heaven and Earth – Beinfield & Korngold"
         ]
     },
     {
@@ -409,75 +441,80 @@ export const points = [
         "category": [
             "Shu-Stream point",
             "Yuan-Source point",
-            "Earth point of Liver meridian"
+            "Earth point of Liver"
         ],
         "traditionalFunctions": [
             "Spreads Liver Qi",
             "Subdues Liver Yang",
-            "Nourishes Liver Blood",
-            "Calms the mind"
+            "Expels internal Wind",
+            "Nourishes Liver Blood"
         ],
         "bodyArea": "Foot",
-        "bodyRegion": "Dorsum of foot",
-        "anatomicalLocation": "In the depression between the 1st and 2nd metatarsal bones, 2 cun proximal to the margin of the web",
+        "bodyRegion": "Dorsum of Foot",
+        "anatomicalLocation": "On the dorsum of the foot, in the depression distal to the junction of the first and second metatarsal bones",
         "symptoms": [
-            "Stress",
-            "Anger",
-            "Headache",
-            "Eye problems",
-            "Menstrual pain",
-            "Insomnia"
+            "Irritability",
+            "Headache (vertex)",
+            "Dizziness",
+            "Menstrual irregularities",
+            "Eye redness",
+            "Nausea",
+            "Constipation"
         ],
         "indications": [
-            "Liver Qi stagnation",
+            "Stress and anger",
             "Hypertension",
-            "Emotional disorders",
-            "Headaches",
-            "PMS"
+            "Menstrual cramps",
+            "Vision problems",
+            "Digestive stagnantion"
         ],
         "modernUses": [
             "Stress management",
-            "Blood pressure regulation",
-            "Migraine relief",
-            "Anxiety"
+            "PMS emotional symptoms",
+            "Headache relief",
+            "High blood pressure support"
         ],
         "benefits": [
-            "Relieves stress",
-            "Balances emotions",
-            "Eases headaches",
-            "Regulates menstruation"
+            "Smooths emotional flow",
+            "Detoxifies the Liver meridian",
+            "Relieves headaches",
+            "Lowers stress levels"
         ],
         "contraindications": [
             "Pregnancy (use with caution)",
-            "Skin lesions at site"
+            "Very weak patients"
         ],
         "precautions": [
-            "May cause strong sensation — reduce intensity if uncomfortable"
+            "Can be very tender; start with light pressure"
         ],
         "pressureTechnique": {
-            "method": "Firm fingertip or thumb pressure",
-            "duration": "1–2 minutes per side",
-            "intensity": "Moderate to firm",
+            "method": "Sliding thumb pressure toward the toes or firm circular massage",
+            "duration": "1–2 minutes per foot",
+            "intensity": "Moderate",
             "frequency": "Daily during stress periods"
         },
         "coordinates": {
-            "x": 42,
-            "y": 90
+            "x": 480,
+            "y": 2150,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "LI4",
-            "SP6",
-            "GB34"
+            "GB34",
+            "GV20"
         ],
         "associatedOrgans": [
             "Liver",
-            "Gallbladder"
+            "Gallbladder",
+            "Eyes"
         ],
         "difficultyLevel": "Beginner",
         "video": "",
         "references": [
             "A Manual of Acupuncture – Deadman et al.",
-            "Between Heaven and Earth – Beinfield & Korngold"
+            "The Web That Has No Weaver – Kaptchuk"
         ]
     },
     {
@@ -491,71 +528,79 @@ export const points = [
         "yinYang": "Yin",
         "category": [
             "Jing-Well point",
-            "Wood point of Kidney meridian"
+            "Wood point of Kidney"
         ],
         "traditionalFunctions": [
-            "Clears heat and calms the mind",
-            "Descends excess Yang",
-            "Restores consciousness"
+            "Grounds the Qi",
+            "Clears heat from the head",
+            "Nourishes Kidney Yin",
+            "Resuscitates (emergency point)"
         ],
         "bodyArea": "Foot",
-        "bodyRegion": "Plantar surface",
-        "anatomicalLocation": "On the sole of the foot, in the depression when the foot is plantarflexed, at the junction of anterior 1/3 and posterior 2/3",
+        "bodyRegion": "Sole of Foot",
+        "anatomicalLocation": "On the sole of the foot, between the second and third metatarsal bones, about 1/3 the distance from the base of the second toe to the heel",
         "symptoms": [
-            "Anxiety",
             "Insomnia",
             "Dizziness",
-            "Hypertension",
-            "Hot flashes"
+            "Sore throat (dry)",
+            "Anxiety",
+            "Hot flashes",
+            "Headache"
         ],
         "indications": [
-            "Emergency resuscitation",
-            "Anxiety",
-            "Excess Yang patterns",
-            "Night sweats"
+            "Sleep disorders",
+            "Hypertension",
+            "Menopausal symptoms",
+            "Mental agitation",
+            "Fainting"
         ],
         "modernUses": [
-            "Stress relief",
-            "Sleep improvement",
-            "Hot flash management",
-            "Grounding practices"
+            "Sleep promotion",
+            "Grounding after stress",
+            "Relief from 'burning feet' syndrome",
+            "Foot pain relief"
         ],
         "benefits": [
-            "Grounds energy",
-            "Calms anxiety",
-            "Cools excess heat",
-            "Improves sleep"
+            "Supreme grounding point",
+            "Promotes deep sleep",
+            "Calms intense anxiety",
+            "Draws energy down from the head"
         ],
         "contraindications": [
-            "None significant for acupressure"
+            "Pregnancy (unless for specific medical induction)",
+            "Local foot injuries"
         ],
         "precautions": [
-            "May be tender — use graduated pressure"
+            "Use firm but sensitive pressure; highly sensitive in most people"
         ],
         "pressureTechnique": {
-            "method": "Thumb press or knuckle rolling",
-            "duration": "2–3 minutes per foot",
+            "method": "Firm thumb pressure or knuckles",
+            "duration": "1–3 minutes",
             "intensity": "Moderate",
             "frequency": "Evening before sleep"
         },
         "coordinates": {
-            "x": 45,
-            "y": 93
+            "x": 564,
+            "y": 2250,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "KD3",
-            "CV4",
-            "HT7"
+            "GV20",
+            "LV3"
         ],
         "associatedOrgans": [
             "Kidneys",
-            "Heart"
+            "Brain",
+            "Endocrine system"
         ],
         "difficultyLevel": "Beginner",
         "video": "",
         "references": [
             "A Manual of Acupuncture – Deadman et al.",
-            "The Web That Has No Weaver – Kaptchuk"
+            "Between Heaven and Earth – Beinfield & Korngold"
         ]
     },
     {
@@ -572,64 +617,72 @@ export const points = [
             "Confluent point of Yin Wei Mai"
         ],
         "traditionalFunctions": [
-            "Calms the Heart",
-            "Relieves nausea",
             "Opens the chest",
-            "Regulates Heart rhythm"
+            "Regulates Heart Qi",
+            "Harmonizes the Stomach",
+            "Calms the Shen (mind)",
+            "Relieves nausea"
         ],
         "bodyArea": "Arm",
         "bodyRegion": "Forearm",
-        "anatomicalLocation": "2 cun proximal to the wrist crease, between the tendons of palmaris longus and flexor carpi radialis",
+        "anatomicalLocation": "2 cun superior to the wrist crease, between the tendons of palmaris longus and flexor carpi radialis",
         "symptoms": [
             "Nausea",
-            "Anxiety",
-            "Palpitations",
             "Motion sickness",
+            "Vomiting",
+            "Anxiety",
             "Insomnia",
-            "Chest pain"
+            "Chest fullness",
+            "Palpitations"
         ],
         "indications": [
-            "Nausea and vomiting",
-            "Heart disorders",
-            "Anxiety",
-            "Wrist pain"
+            "Motion sickness",
+            "Morning sickness",
+            "Stress-related Heart symptoms",
+            "Psychological distress",
+            "Upper digestive upset"
         ],
         "modernUses": [
-            "Chemotherapy-induced nausea",
-            "Motion sickness (Sea-Bands)",
-            "Panic attacks",
-            "Cardiac arrhythmia support"
+            "Relief from nausea (travel, pregnancy, post-op)",
+            "Panic attack management",
+            "Sleep improvement",
+            "Carpal tunnel support"
         ],
         "benefits": [
-            "Rapidly reduces nausea",
-            "Calms anxiety",
-            "Regulates heart",
+            "The 'First Aid' point for nausea",
+            "Powerful anxiety reliever",
+            "Soothes the 'spirit'",
             "Eases chest tightness"
         ],
         "contraindications": [
-            "Skin lesions at site"
+            "Local wrist surgery sites",
+            "Tendonitis at site"
         ],
         "precautions": [
-            "Avoid excessive pressure on wrist in those with carpal tunnel"
+            "Avoid deep pressure if tendons are inflamed"
         ],
         "pressureTechnique": {
-            "method": "Firm sustained thumb pressure or wristband stimulation",
-            "duration": "1–3 minutes per wrist",
-            "intensity": "Moderate to firm",
+            "method": "Firm thumb pressure between the two tendons",
+            "duration": "1–2 minutes per side",
+            "intensity": "Moderate",
             "frequency": "As needed for nausea; daily for anxiety"
         },
         "coordinates": {
-            "x": 30,
-            "y": 55
+            "x": 310,
+            "y": 980,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
+            "ST36",
             "HT7",
-            "CV17",
-            "ST36"
+            "CV12"
         ],
         "associatedOrgans": [
+            "Pericardium",
             "Heart",
-            "Pericardium"
+            "Stomach"
         ],
         "difficultyLevel": "Beginner",
         "video": "",
@@ -649,68 +702,73 @@ export const points = [
         "yinYang": "Yang",
         "category": [
             "Yuan-Source point",
-            "Command point for face and mouth"
+            "Command point of the Face and Mouth"
         ],
         "traditionalFunctions": [
             "Expels Wind",
-            "Regulates defensive Qi",
+            "Releases the Exterior",
             "Stops pain",
-            "Clears heat"
+            "Regulates the face and head"
         ],
         "bodyArea": "Hand",
-        "bodyRegion": "Dorsum of hand",
-        "anatomicalLocation": "On the dorsum of the hand, between the 1st and 2nd metacarpal bones, at the midpoint of the 2nd metacarpal",
+        "bodyRegion": "Dorsum of Hand",
+        "anatomicalLocation": "On the dorsum of the hand, between the 1st and 2nd metatarsal bones, at the midpoint of the second metacarpal bone on its radial side",
         "symptoms": [
             "Headache",
             "Toothache",
-            "Facial pain",
-            "Common cold",
+            "Sinus pain",
+            "Sore throat",
+            "Fever",
             "Constipation",
-            "Skin disorders"
+            "Eye pain"
         ],
         "indications": [
-            "Pain (especially head, face, neck)",
-            "Immune support",
-            "Respiratory conditions",
-            "Labor induction"
+            "All pain conditions (especially head/face)",
+            "Common cold",
+            "Allergies",
+            "Intestinal stagnation",
+            "Labor induction (specialized use)"
         ],
         "modernUses": [
-            "Headache and migraine relief",
-            "Dental pain",
-            "Immune stimulation",
-            "Pain management"
+            "Headache management",
+            "Dental pain relief",
+            "Allergy symptom relief",
+            "General immunity"
         ],
         "benefits": [
-            "Potent pain reliever",
-            "Boosts immunity",
-            "Clears sinus congestion",
-            "Reduces inflammation"
+            "Master point for pain relief",
+            "Clears the head",
+            "Boosts defensive energy (Wei Qi)",
+            "Moves intestinal stagnation"
         ],
         "contraindications": [
-            "Pregnancy (strongly contraindicated — can induce labor)"
+            "PREGNANCY (Strongly contraindicated as it can induce labor)"
         ],
         "precautions": [
-            "Avoid during pregnancy",
-            "Use firmly but not aggressively"
+            "DO NOT USE on pregnant women unless specifically for labor support"
         ],
         "pressureTechnique": {
-            "method": "Pinching with thumb and index finger or firm thumb pressure",
-            "duration": "1–2 minutes per hand",
-            "intensity": "Firm",
+            "method": "Firm circular pressure into the 'web' toward the bone",
+            "duration": "1–3 minutes per hand",
+            "intensity": "Moderate to firm",
             "frequency": "As needed for pain or illness"
         },
         "coordinates": {
-            "x": 28,
-            "y": 50
+            "x": 230,
+            "y": 1120,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "LV3",
             "LU7",
-            "ST36"
+            "LI11"
         ],
         "associatedOrgans": [
             "Large Intestine",
-            "Lungs"
+            "Lungs",
+            "Brain"
         ],
         "difficultyLevel": "Beginner",
         "video": "",
@@ -730,70 +788,74 @@ export const points = [
         "yinYang": "Yin",
         "category": [
             "Front Mu point of Pericardium",
-            "Sea of Qi",
-            "Influential point for Qi"
+            "Influential point of Lung Qi (Zong Qi)",
+            "Sea of Qi point"
         ],
         "traditionalFunctions": [
-            "Regulates Qi in the chest",
-            "Unbinds the chest",
-            "Benefits the diaphragm",
-            "Calms the mind"
+            "Regulates Qi and descends rebellion",
+            "Opens the chest",
+            "Benefits the breasts",
+            "Promotes lactation"
         ],
-        "bodyArea": "Torso",
-        "bodyRegion": "Chest",
-        "anatomicalLocation": "On the sternum, at the level of the 4th intercostal space, midway between the nipples",
+        "bodyArea": "Chest",
+        "bodyRegion": "Sternum",
+        "anatomicalLocation": "On the anterior midline of the sternum, level with the fourth intercostal space",
         "symptoms": [
             "Chest tightness",
-            "Anxiety",
-            "Grief",
             "Shortness of breath",
+            "Anxiety",
             "Palpitations",
-            "Breast pain"
+            "Cough",
+            "Breast sensitivity"
         ],
         "indications": [
-            "Heart and Lung disorders",
-            "Emotional distress",
-            "Lactation issues",
-            "Qi stagnation in chest"
+            "Asthma",
+            "Bronchitis",
+            "Emotional grief and anxiety",
+            "Breast feeding difficulties",
+            "Heart conditions"
         ],
         "modernUses": [
-            "Anxiety and grief support",
-            "Asthma",
-            "Post-partum lactation",
-            "Cardiac rehabilitation"
+            "Anxiety/Panic attack mitigation",
+            "Office posture chest opening",
+            "Chronic respiratory support",
+            "Emotional stabilization"
         ],
         "benefits": [
-            "Opens the heart",
-            "Releases emotional tension",
-            "Eases breathing",
-            "Promotes calm"
+            "Relieves emotional pressure in the heart",
+            "Improves lung volume",
+            "Soothes the chest",
+            "Harmonizes breathing"
         ],
         "contraindications": [
-            "Breast inflammation",
-            "Open wounds"
+            "Fractured sternum",
+            "Extreme physical fragility"
         ],
         "precautions": [
-            "Use gentle pressure; avoid deep pressure on sternum"
+            "Use gentle pressure on the sternum bone"
         ],
         "pressureTechnique": {
-            "method": "Gentle flat-finger or palm press",
-            "duration": "2–3 minutes",
-            "intensity": "Light",
-            "frequency": "Daily, especially during emotional stress"
+            "method": "Gentle circular friction with fingertips or palm",
+            "duration": "1–2 minutes",
+            "intensity": "Light to moderate",
+            "frequency": "Daily for emotional support"
         },
         "coordinates": {
-            "x": 50,
-            "y": 27
+            "x": 564,
+            "y": 668,
+            "svgSource": "body-map-front.svg",
+            "svgWidth": 1127,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "PC6",
             "LU1",
-            "HT7"
+            "GV20"
         ],
         "associatedOrgans": [
             "Heart",
-            "Lungs",
-            "Pericardium"
+            "Pericardium",
+            "Lungs"
         ],
         "difficultyLevel": "Beginner",
         "video": "",
@@ -809,61 +871,66 @@ export const points = [
         "ChineseName": "大椎",
         "pinyin": "Dà Zhuī",
         "meridian": "Governing Vessel",
-        "element": "Yang",
+        "element": "Fire",
         "yinYang": "Yang",
         "category": [
-            "Meeting point of all Yang meridians"
+            "Meeting point of Governing Vessel and all 6 Yang meridians"
         ],
         "traditionalFunctions": [
             "Clears heat",
             "Expels Wind",
-            "Strengthens Yang",
-            "Regulates Ying and Wei Qi"
+            "Tonifies the Yang",
+            "Regulates the Wei Qi (defensive energy)"
         ],
         "bodyArea": "Back",
         "bodyRegion": "Upper Back / Neck",
-        "anatomicalLocation": "Below the spinous process of C7, at the base of the neck",
+        "anatomicalLocation": "On the posterior midline, below the spinous process of the 7th cervical vertebra (C7)",
         "symptoms": [
             "Fever",
-            "Stiff neck",
             "Common cold",
-            "Malaria",
-            "Epilepsy",
-            "Hot flashes"
+            "Neck stiffness",
+            "Cough",
+            "Night sweats",
+            "Fatigue"
         ],
         "indications": [
             "Febrile diseases",
+            "Malaria history",
+            "Chronic neck pain",
             "Immune deficiency",
-            "Neck and shoulder tension",
-            "Mental disorders"
+            "Respiratory infections"
         ],
         "modernUses": [
             "Fever reduction",
-            "Immune stimulation",
-            "Neck stiffness",
-            "Hot flashes during menopause"
+            "Boosting immunity (especially in pediatric acupuncture)",
+            "Relief from 'tech neck'",
+            "Management of chronic allergies"
         ],
         "benefits": [
-            "Boosts immune response",
-            "Relieves neck tension",
-            "Clears infection",
-            "Regulates body temperature"
+            "Key 'anti-flu' point",
+            "Clears systemic heat",
+            "Benefits the neck and head",
+            "Revitalizes whole-body energy"
         ],
         "contraindications": [
+            "Spinal injury at the level",
             "Skin infections at site"
         ],
         "precautions": [
-            "Avoid deep pressure near spinal cord"
+            "Avoid excessive pressure on the vertebrae"
         ],
         "pressureTechnique": {
-            "method": "Sustained fingertip or thumb pressure",
+            "method": "Firm circular friction until site is warm",
             "duration": "1–2 minutes",
             "intensity": "Moderate",
             "frequency": "Daily during illness; weekly for maintenance"
         },
         "coordinates": {
-            "x": 50,
-            "y": 12
+            "x": 574,
+            "y": 581,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "BL12",
@@ -943,8 +1010,11 @@ export const points = [
             "frequency": "Daily"
         },
         "coordinates": {
-            "x": 43,
-            "y": 50
+            "x": 490,
+            "y": 1083,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "GV4",
@@ -1023,8 +1093,11 @@ export const points = [
             "frequency": "Daily, especially in cold conditions"
         },
         "coordinates": {
-            "x": 50,
-            "y": 52
+            "x": 574,
+            "y": 1083,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "BL23",
@@ -1102,8 +1175,11 @@ export const points = [
             "frequency": "Daily during respiratory illness"
         },
         "coordinates": {
-            "x": 43,
-            "y": 22
+            "x": 490,
+            "y": 750,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "LU1",
@@ -1183,8 +1259,11 @@ export const points = [
             "frequency": "As needed for back pain"
         },
         "coordinates": {
-            "x": 45,
-            "y": 68
+            "x": 470,
+            "y": 1935,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "BL23",
@@ -1262,8 +1341,11 @@ export const points = [
             "frequency": "As needed for tension"
         },
         "coordinates": {
-            "x": 30,
-            "y": 14
+            "x": 350,
+            "y": 450,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "GV14",
@@ -1342,8 +1424,11 @@ export const points = [
             "frequency": "Daily for blood deficiency patterns"
         },
         "coordinates": {
-            "x": 43,
-            "y": 35
+            "x": 490,
+            "y": 900,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "BL13",
@@ -1422,8 +1507,11 @@ export const points = [
             "frequency": "Daily for bone-related conditions"
         },
         "coordinates": {
-            "x": 43,
-            "y": 17
+            "x": 490,
+            "y": 630,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "GV14",
@@ -1505,8 +1593,11 @@ export const points = [
             "frequency": "Daily, especially morning"
         },
         "coordinates": {
-            "x": 50,
-            "y": 5
+            "x": 574,
+            "y": 100,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "GV14",
@@ -1585,8 +1676,11 @@ export const points = [
             "frequency": "As needed; post-exercise"
         },
         "coordinates": {
-            "x": 45,
-            "y": 78
+            "x": 475,
+            "y": 2100,
+            "svgSource": "body-map-back.svg",
+            "svgWidth": 1149,
+            "svgHeight": 2286
         },
         "relatedPoints": [
             "BL40",
@@ -1605,3 +1699,6 @@ export const points = [
         ]
     }
 ];
+
+export { acupuncturePoints };
+export default acupuncturePoints;
