@@ -1,0 +1,16 @@
+{
+  "name": "Acupressure Body Explorer",
+  "short_name": "Acupressure",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "description": "Explore acupressure points on the human body",
+  "icons": [
+    {
+      "src": "body-map-front.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
